@@ -1,0 +1,10 @@
+<h1>Parent Component</h1>
+<ul>
+    <li *ngFor="let p of people">{{p.id}}: {{p.name}}</li>
+</ul>
+<button type="button" (click)="addNumberIncorrectly()">Add person (will not update UI correctly)</button>
+<button type="button" (click)="addNumberCorrectly()">Add person (will update UI correctly)</button>
+
+<hr>
+
+<app-child [people]="people"></app-child>

@@ -1,0 +1,6 @@
+<h1>Child Component</h1>
+<ul>
+    <li *ngFor="let p of people" [class.bold-text]="isEvenId(p.id)">{{p.id}}: {{p.name}}</li>
+</ul>
+
+<button (click)="manualRefresh()">Refresh UI</button>
